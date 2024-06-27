@@ -29,13 +29,16 @@ public class HelloController {
 		sb.append("</body>");
 		sb.append("</html>");
 		
-			
-				
-			
-			
-				
-			
 		
 		return sb.toString();
+	}
+	
+	
+	// JSP
+	
+	// /src/main/resources/META-INF/resources/WEB-INF/jsp/
+	@RequestMapping("say-hello-jsp")
+	public String sayHelloJsp() {
+		return "sayHello";
 	}
 }
